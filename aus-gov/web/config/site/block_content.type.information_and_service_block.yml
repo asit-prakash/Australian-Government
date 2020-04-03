@@ -1,0 +1,8 @@
+uuid: 8637144a-fb1c-4a56-bd18-8cd0e479669e
+langcode: en
+status: true
+dependencies: {  }
+id: information_and_service_block
+label: 'information and service block'
+revision: 0
+description: 'block type of information and services'

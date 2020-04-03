@@ -1,0 +1,14 @@
+uuid: a6be6152-d2b8-4413-a06d-f012d11863a8
+name: 'Australian Government'
+mail: asit.prakash@innoraft.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

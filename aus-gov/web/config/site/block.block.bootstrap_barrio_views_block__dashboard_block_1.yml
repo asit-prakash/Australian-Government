@@ -1,0 +1,31 @@
+uuid: 52205505-b90f-4eba-80ce-574d59d56a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.dashboard
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_views_block__dashboard_block_1
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:dashboard-block_1'
+settings:
+  id: 'views_block:dashboard-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

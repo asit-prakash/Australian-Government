@@ -1,0 +1,8 @@
+uuid: 6a497b5f-5923-4aa1-8910-81cf053f4baa
+langcode: en
+status: true
+dependencies: {  }
+id: events
+label: Events
+description: 'upcoming and past events'
+locked: false

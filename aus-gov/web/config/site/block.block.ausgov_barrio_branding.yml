@@ -1,0 +1,25 @@
+uuid: e57ad94d-3b6c-4edb-8085-a8849ab92c1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ausgov_barrio
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: ausgov_barrio_branding
+theme: ausgov_barrio
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

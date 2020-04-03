@@ -1,0 +1,39 @@
+uuid: c4a7e014-8e43-4a7b-bd10-f40c89e07ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-content
+  module:
+    - system
+    - user
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_addcontent
+theme: ausgov_barrio
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'system_menu_block:add-content'
+settings:
+  id: 'system_menu_block:add-content'
+  label: 'Add Content'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

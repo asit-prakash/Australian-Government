@@ -1,0 +1,19 @@
+uuid: dc4d764c-f857-45c0-8a53-35dbc1b457ed
+langcode: en
+status: true
+dependencies: {  }
+id: event_creator
+label: 'Event Creator'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'create event content'
+  - 'delete own event content'
+  - 'edit own event content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition move_to_review'
+  - 'use text format basic_html'
+  - 'view own unpublished content'

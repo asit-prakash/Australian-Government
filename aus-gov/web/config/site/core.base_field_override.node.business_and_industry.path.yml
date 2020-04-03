@@ -1,0 +1,20 @@
+uuid: 3bedbd50-a136-43f3-b56e-a4c73c049cdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business_and_industry
+  module:
+    - path
+id: node.business_and_industry.path
+field_name: path
+entity_type: node
+bundle: business_and_industry
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

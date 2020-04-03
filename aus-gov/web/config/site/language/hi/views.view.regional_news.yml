@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>Sorry...nothing here!!</p>\r\n"
+            format: basic_html
+      title: 'राष्ट्रीय समाचार'
+      fields:
+        uid:
+          label: ' द्वारा प्रस्तुत'
+        created:
+          label: 'दिनांक और समय'
+  page_2:
+    display_options:
+      title: 'अंतरराष्ट्रीय समाचार'

@@ -1,0 +1,8 @@
+uuid: fbe6fdea-5292-447c-8ecd-2e5559a77ba2
+langcode: en
+status: true
+dependencies: {  }
+name: Tag
+vid: tag
+description: 'predefined tags for news and events'
+weight: 0

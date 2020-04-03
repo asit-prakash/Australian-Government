@@ -1,0 +1,8 @@
+uuid: c3f20c0b-c16a-4bfb-8bb7-0a6f211ce6dd
+langcode: en
+status: true
+dependencies: {  }
+id: information-and-services
+label: 'information and services'
+description: 'child pages of information and services'
+locked: false

@@ -1,0 +1,19 @@
+uuid: a9e8ebb2-548a-4c76-a70f-73c2d12b56f9
+langcode: en
+status: true
+dependencies: {  }
+id: content_creator
+label: 'Content Creator'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'create content content'
+  - 'delete own content content'
+  - 'edit own content content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition move_to_review'
+  - 'use text format basic_html'
+  - 'view own unpublished content'

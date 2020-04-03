@@ -1,0 +1,20 @@
+uuid: 1ecc2dd0-693b-448d-b63b-03bc94566d47
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_mainpagecontent
+theme: ausgov_barrio
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

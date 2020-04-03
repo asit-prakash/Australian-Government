@@ -1,0 +1,41 @@
+uuid: 07cb8a5b-b840-4032-9a86-1212ea88324f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.regional-news
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: regionalnews
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:regional-news'
+settings:
+  id: 'system_menu_block:regional-news'
+  label: 'In this section'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-and-event/news
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      event_creator: event_creator
+      news_creator: news_creator
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

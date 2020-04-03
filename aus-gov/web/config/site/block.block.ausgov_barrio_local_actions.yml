@@ -1,0 +1,20 @@
+uuid: 66c6961b-4c2b-4bbb-b679-2898ddb2570d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ausgov_barrio
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: ausgov_barrio_local_actions
+theme: ausgov_barrio
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

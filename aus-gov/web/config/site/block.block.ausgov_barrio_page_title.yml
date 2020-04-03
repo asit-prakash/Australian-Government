@@ -1,0 +1,20 @@
+uuid: ecaf07dd-0b98-4b2b-894c-4189a7ac1a61
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ausgov_barrio
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: ausgov_barrio_page_title
+theme: ausgov_barrio
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

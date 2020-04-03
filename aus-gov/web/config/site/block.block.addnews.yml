@@ -1,0 +1,39 @@
+uuid: 00690e53-761c-4cce-9d2f-fddc9b3d1105
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-news
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: addnews
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:add-news'
+settings:
+  id: 'system_menu_block:add-news'
+  label: 'Add News'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      news_creator: news_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

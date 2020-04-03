@@ -1,0 +1,25 @@
+uuid: d90d5f01-1bb7-4fe5-9390-f2a27dab566b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.site-menu
+  module:
+    - system
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_sitemenu
+theme: ausgov_barrio
+region: featured_top
+weight: -10
+provider: null
+plugin: 'system_menu_block:site-menu'
+settings:
+  id: 'system_menu_block:site-menu'
+  label: 'site menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

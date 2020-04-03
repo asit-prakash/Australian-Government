@@ -1,0 +1,8 @@
+uuid: 8ce36843-8e0d-4f55-8c02-535c8467fa5a
+langcode: en
+status: true
+dependencies: {  }
+id: news-and-event
+label: 'News and Event'
+description: 'news and event side menu'
+locked: false

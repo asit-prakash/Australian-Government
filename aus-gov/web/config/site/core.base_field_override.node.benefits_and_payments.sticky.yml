@@ -1,0 +1,22 @@
+uuid: 85bfa42b-60a0-45af-838a-f9b19ac2a890
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.benefits_and_payments
+id: node.benefits_and_payments.sticky
+field_name: sticky
+entity_type: node
+bundle: benefits_and_payments
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

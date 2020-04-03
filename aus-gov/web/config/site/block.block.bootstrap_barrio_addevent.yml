@@ -1,0 +1,39 @@
+uuid: 9272476a-bafe-42fa-b6aa-6a78213b59ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-event
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_addevent
+theme: bootstrap_barrio
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:add-event'
+settings:
+  id: 'system_menu_block:add-event'
+  label: 'Add Event'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      event_creator: event_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

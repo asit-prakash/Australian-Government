@@ -1,0 +1,8 @@
+uuid: 106868f1-c5e3-4ae3-a274-a24cadf7810d
+langcode: en
+status: true
+dependencies: {  }
+id: regional-news
+label: 'regional news'
+description: 'regional news menu'
+locked: false

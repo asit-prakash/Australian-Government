@@ -1,0 +1,20 @@
+uuid: 321767af-764b-43e6-ae39-8fd5e38bd273
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.benefits_and_payments
+  module:
+    - path
+id: node.benefits_and_payments.path
+field_name: path
+entity_type: node
+bundle: benefits_and_payments
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

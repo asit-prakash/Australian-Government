@@ -1,0 +1,22 @@
+uuid: fe902ed1-372d-4286-970b-3295ba3d2fa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.benefits_and_payments
+id: node.benefits_and_payments.promote
+field_name: promote
+entity_type: node
+bundle: benefits_and_payments
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

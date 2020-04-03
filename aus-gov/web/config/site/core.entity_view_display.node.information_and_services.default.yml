@@ -1,0 +1,29 @@
+uuid: d0b1ecca-dd58-46db-8a33-09f76323445d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.information_and_services.body
+    - node.type.information_and_services
+  module:
+    - text
+    - user
+id: node.information_and_services.default
+targetEntityType: node
+bundle: information_and_services
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

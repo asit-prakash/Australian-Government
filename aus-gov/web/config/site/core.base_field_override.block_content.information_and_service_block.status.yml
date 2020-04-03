@@ -1,0 +1,22 @@
+uuid: e35da400-f637-468f-ad90-681d9f7f8dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information_and_service_block
+id: block_content.information_and_service_block.status
+field_name: status
+entity_type: block_content
+bundle: information_and_service_block
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

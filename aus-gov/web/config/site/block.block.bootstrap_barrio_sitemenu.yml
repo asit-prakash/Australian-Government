@@ -1,0 +1,25 @@
+uuid: afedecfb-4960-4f97-b0b2-5a5ba8831c40
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.site-menu
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_sitemenu
+theme: bootstrap_barrio
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:site-menu'
+settings:
+  id: 'system_menu_block:site-menu'
+  label: 'site menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

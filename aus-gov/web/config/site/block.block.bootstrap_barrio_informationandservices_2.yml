@@ -1,0 +1,41 @@
+uuid: f8fbb798-0f6c-4480-b303-d600063dca61
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.information-and-services
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_informationandservices_2
+theme: bootstrap_barrio
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:information-and-services'
+settings:
+  id: 'system_menu_block:information-and-services'
+  label: 'In this section'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /information-and-services
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      event_creator: event_creator
+      news_creator: news_creator
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,22 @@
+uuid: 9a8d0e07-f8c5-415f-8cfa-a2ee7d4eccda
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business_and_industry
+id: node.business_and_industry.status
+field_name: status
+entity_type: node
+bundle: business_and_industry
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 8c789867-2cbd-4704-bb69-fb20786e669d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ausgov_barrio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ausgov_barrio_local_tasks
+theme: ausgov_barrio
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

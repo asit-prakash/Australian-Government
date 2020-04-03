@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        uid:
+          label: 'द्वारा प्रस्तुत'
+        created:
+          label: 'दिनांक और समय'
+        field_event_date:
+          label: 'आयोजन दिनांक'
+      title: 'आने वाले कार्यक्रम'
+  page_2:
+    display_options:
+      title: 'पिछली घटनाएं'

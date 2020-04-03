@@ -1,0 +1,20 @@
+uuid: 472ab44f-caf0-482f-8a1c-06f50a5b2cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.benefits_and_payments
+id: node.benefits_and_payments.uid
+field_name: uid
+entity_type: node
+bundle: benefits_and_payments
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

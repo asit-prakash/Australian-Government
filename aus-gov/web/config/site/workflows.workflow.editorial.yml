@@ -1,0 +1,101 @@
+uuid: 92816137-6226-4aa8-b607-a7aec8217df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.content
+    - node.type.event
+    - node.type.news
+  module:
+    - content_moderation
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 1
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -3
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    review:
+      published: false
+      default_revision: false
+      label: 'Admin review'
+      weight: -2
+    user_review:
+      published: false
+      default_revision: false
+      label: 'User review'
+      weight: -1
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 0
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 1
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 2
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -4
+      from:
+        - draft
+        - published
+        - review
+    move_to_review:
+      label: 'Move to admin review'
+      from:
+        - draft
+        - published
+        - review
+        - user_review
+      to: review
+      weight: -3
+    move_to_user_review:
+      label: 'Move to user review'
+      from:
+        - draft
+        - published
+        - review
+      to: user_review
+      weight: -2
+    publish:
+      label: Publish
+      to: published
+      weight: -1
+      from:
+        - draft
+        - published
+        - review
+        - user_review
+  entity_types:
+    node:
+      - content
+      - event
+      - news
+  default_moderation_state: draft

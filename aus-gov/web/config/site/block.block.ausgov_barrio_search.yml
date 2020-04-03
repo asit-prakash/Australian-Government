@@ -1,0 +1,23 @@
+uuid: 2a2c8bab-d858-42a1-8a73-c722f6967268
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ausgov_barrio
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: ausgov_barrio_search
+theme: ausgov_barrio
+region: sidebar_first
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

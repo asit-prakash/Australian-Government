@@ -1,0 +1,41 @@
+uuid: 1906b31e-676b-4559-9954-b8ffa718e0a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.regional-news
+  module:
+    - system
+    - user
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_regionalnews
+theme: ausgov_barrio
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:regional-news'
+settings:
+  id: 'system_menu_block:regional-news'
+  label: 'In this section'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-and-event/news
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      event_creator: event_creator
+      news_creator: news_creator
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

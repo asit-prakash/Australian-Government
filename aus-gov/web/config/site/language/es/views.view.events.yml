@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        uid:
+          label: 'presentado por'
+        created:
+          label: en
+        field_event_date:
+          label: 'Fecha del evento'
+      title: 'Próximos Eventos'
+  page_2:
+    display_options:
+      title: 'Eventos pasados'

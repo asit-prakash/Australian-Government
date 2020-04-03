@@ -1,0 +1,39 @@
+uuid: 4c5b6382-dcc1-4178-b5b8-1404cd129008
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-news
+  module:
+    - system
+    - user
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_addnews
+theme: ausgov_barrio
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'system_menu_block:add-news'
+settings:
+  id: 'system_menu_block:add-news'
+  label: 'Add News'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      news_creator: news_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

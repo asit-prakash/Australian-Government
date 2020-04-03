@@ -1,0 +1,41 @@
+uuid: a25604e3-da91-42e9-bfcd-ec8e7a4ad61e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.events
+  module:
+    - system
+    - user
+  theme:
+    - ausgov_barrio
+id: ausgov_barrio_events
+theme: ausgov_barrio
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:events'
+settings:
+  id: 'system_menu_block:events'
+  label: 'In this section'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-and-event/events
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      event_creator: event_creator
+      news_creator: news_creator
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

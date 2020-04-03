@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      title: 'Noticias y eventos'
+  page_1:
+    display_options:
+      fields:
+        uid:
+          label: ' presentado por'
+        created:
+          label: ' en'
+  page_3:
+    display_options:
+      title: Evento
+      fields:
+        uid:
+          label: ' presentado por'
+        created:
+          label: en

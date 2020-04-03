@@ -1,0 +1,18 @@
+uuid: 8031c64a-2724-4560-94f0-0b617d734778
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.benefits_and_payments
+id: node.benefits_and_payments.created
+field_name: created
+entity_type: node
+bundle: benefits_and_payments
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

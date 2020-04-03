@@ -1,0 +1,31 @@
+uuid: 6b5cfda3-9e74-4e65-bb8f-4f17478c93ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.business_and_industry.body
+    - node.type.business_and_industry
+  module:
+    - text
+    - user
+id: node.business_and_industry.teaser
+targetEntityType: node
+bundle: business_and_industry
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

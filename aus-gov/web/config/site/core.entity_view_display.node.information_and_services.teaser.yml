@@ -1,0 +1,31 @@
+uuid: bb6d38aa-bef4-48d2-8810-20511c45e03c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.information_and_services.body
+    - node.type.information_and_services
+  module:
+    - text
+    - user
+id: node.information_and_services.teaser
+targetEntityType: node
+bundle: information_and_services
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

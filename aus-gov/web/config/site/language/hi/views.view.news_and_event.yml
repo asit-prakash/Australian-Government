@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      title: 'समाचार और घटना'
+  page_2:
+    display_options:
+      title: समाचार
+      fields:
+        uid:
+          label: ' द्वारा प्रस्तुत'
+        created:
+          label: 'दिनांक और समय'
+  page_3:
+    display_options:
+      title: प्रतिस्पर्धा
+      fields:
+        uid:
+          label: 'द्वारा प्रस्तुत'
+        created:
+          label: 'दिनांक और समय'
+  page_1:
+    display_options:
+      fields:
+        uid:
+          label: 'द्वारा प्रस्तुत'
+        created:
+          label: 'दिनांक और समय'
