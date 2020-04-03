@@ -16,10 +16,13 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "drupal/bootstrap_barrio": "^4.22",
+        "drupal/bootstrap_barrio": "^4.23",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "drupal/easy_breadcrumb": "^1.12",
+        "drupal/menu_export": "^1.2",
+        "drupal/superfish": "^1.3"
     },
     "require-dev": {
     },
